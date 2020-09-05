@@ -1,0 +1,155 @@
+@font-face {
+      font-family: "Ubuntu";
+      src: url("../../fonts/ubuntu/Ubuntu-Regular.ttf");
+    }
+/*Busqueda de items*/
+.search-box-container{
+	background: #fff;
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #e6efee;
+	padding: 20px 80px;
+}
+
+/*Categorias*/
+.category_header{
+	width: 100%;
+	padding: 20px;
+	background-color: #19caaf;
+	color: white;
+}
+
+.category_header span{
+	font-size: 16px;
+	/*text-transform: uppercase;*/
+	font-weight: 400;
+	font-family: "Ubuntu";
+}
+
+/**/
+
+/*Contenedores de productos y otros items*/
+.item-column{
+	border: 1px solid #e6efee;
+	padding: 20px;
+	padding-bottom: 20px;
+	transition: .3s all ease;
+	box-shadow: 0px 0px 10px 2px rgba(82, 63, 105, 0.15);
+}
+
+.item-column:hover{
+	cursor: pointer;
+	background: #ffffff;
+	border-color: #c7c7c7;
+}
+
+.item-header{
+	min-height: 50px !important;
+}
+
+.item-body{
+	
+}
+
+.item-image{
+	height: 160px;
+	
+}
+
+.item__name{
+	text-align: left !important;
+}
+.item__rating{
+	float: left;
+	width: 100%;
+}
+
+.item__price{
+	width: 100%;
+	float: left;
+}
+.item__price_currency{
+	float: left;
+	font-size: 12px;
+	margin-top: 4px;
+}
+.item__price_cost{
+	float: left;
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.item__description{
+	width: 100%;
+	text-align: left;
+}
+
+.item-action{
+	text-align: right !important;
+}
+
+/*Producto especifico*/
+.flexslider {
+    margin: 0 0 0px !important;
+}
+
+#product-image-container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#product-description-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+.product-title{
+	font-family: "Ubuntu";
+	text-transform: capitalize;
+}
+
+.price-section{
+	margin: 0 0 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-section span.price-new {
+    font-size: 31px;
+    color: #0095db;
+	font-family: "Ubuntu";
+}
+
+.description-section{
+    margin: 0 0 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 14px;
+	
+}
+.description-section:first-letter{
+	text-transform: capitalize;
+}
+
+.add-to-cart-section{
+	padding-bottom: 10px;
+	margin-top: 20px;
+	 border-bottom: 1px solid #ddd;
+}
+
+.product-quantity{
+	line-height: 35px;
+}
+
+.product-specs,.product-ratings, .product-comments{
+	width: 100%;
+	padding: 20px;
+}
+
+.specs-title,.rating-title{
+	border-bottom: 1px solid #ddd;
+}
+	
+/*Fin producto especfico*/

@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('changelocale', ['as' => 'changelocale', 'uses' => 'TranslationController@changeLocale']);
+
+Route::get('management/home', 'AdminController@getHomePage');
+Route::get('/', 'AdminController@getHomePage');
+
+
+//Route::get('management/companies/request', 'AdminController@getCompaniesRequest');
+
+
+
+//********************* Empresas
+Route::resource('management/companies', 'CompanyController');
+	// Obtener listado de empresas ajax
+	Route::post('companies/getcompanybystatus/{statusId}', 'CompanyController@getCompanyByStatus');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('management/login', 'AuthenticationController@login');
+
+Route::get('logout', 'AuthenticationController@logout');
